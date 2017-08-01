@@ -1,0 +1,30 @@
+<h1>Create Product</h1>
+<div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input class="form-control" type="text" ng-model="product.name" />
+        </td>
+        <td>
+          <input class="form-control" type="text" ng-model="product.price" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div>
+  <button ng-click="createProduct()" class="btn btn-primary">Create Product</button>
+</div>
+<div ng-show="hasBeenAdded"
+     class="message_box"
+>
+ {{ message }}
+</div>
