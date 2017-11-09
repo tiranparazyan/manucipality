@@ -70,7 +70,7 @@ angular.module('desktopApp')
 
 
       }
-      if(!direction) {
+      else {
         if(index == $scope.products.length-1) return false;
         index++;
         tmpRightSide = $scope.products.slice(index+1, $scope.products.length);
